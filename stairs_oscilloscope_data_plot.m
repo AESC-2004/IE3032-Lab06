@@ -36,8 +36,8 @@ function stairs_oscilloscope_data_plot(csvFile)
     t = sample_interval*(0:sample_size-1);
 
     % En la matriz, las muestras de voltaje se guardan en la columna 5;
-    % se guardan las muestras en un vector columna:
-    V = M(1:sample_size, 5);
+    % se guardan las muestras en un vector columna (RMS):
+    V = M(1:sample_size, 5); V = V*(1/sqrt(2));
 
     % Se utiliza "stairs" para graficar:
     figure;
