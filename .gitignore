@@ -1,0 +1,11 @@
+# MATLAB: autosaves y temporales
+*.asv
+*.m~
+
+# Live scripts exportados / temporales
+*.mlx~
+
+# Carpetas típicas de caché / codegen
+slprj/
+codegen/
+mex/
